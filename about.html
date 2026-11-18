@@ -3,12 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>About · Alex Morgan</title>
-<meta name="description" content="Biography, education and experience of Alex Morgan.">
+<title>About · Tôn Hoàng Nhớ</title>
+<meta name="description" content="Fourth-year IT student in Ho Chi Minh City, building backend tools for small businesses.">
 <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;600;700;800&family=IBM+Plex+Mono:wght@400;600&family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;600;700;800&family=IBM+Plex+Mono:wght@400;600&display=swap">
 <link rel="stylesheet" href="css/tokens.css">
 <link rel="stylesheet" href="css/site.css">
 <script src="js/theme.js"></script>
@@ -16,11 +16,10 @@
 <body>
 
 <nav class="nav" aria-label="Main">
-  <!-- EDIT: your name; links back to the home page -->
-  <a class="nav-name" href="index.html">Alex Morgan</a>
+  <a class="nav-name" href="index.html">Tôn Hoàng Nhớ</a>
   <a href="about.html" aria-current="page">About</a>
-  <a href="research.html">Research</a>
-  <a href="work.html">Work</a>
+  <a href="research.html">Stack</a>
+  <a href="work.html">Projects</a>
 </nav>
 
 <main>
@@ -31,10 +30,9 @@
 
   <section class="section flush-top">
     <div class="prose">
-      <!-- EDIT: two or three paragraphs. Who you are, what you work on, what you want people to ask you about. -->
-      <p>Start with who you are and the question that organises your work. Two or three sentences that a smart person from another field could follow.</p>
-      <p>Then a little of how you got here — the training, the turn that changed your direction, the places you've worked. Keep it human; the CV has the full list.</p>
-      <p>Close with what you're looking for: collaborators, students, data, an invitation to speak. Readers skim, so tell them what to do next.</p>
+      <p>I am a fourth-year Information Technology student at the University of Transport and Communications in Ho Chi Minh City. My work so far has one shape: a small business is doing something by hand every day, and I replace it with a program that runs without being watched.</p>
+      <p>That started with a shop's sales book, became an Express API and a point-of-sale screen, then a Node service that captures TikTok orders and answers messages on Zalo, then a Python tool that turns the fingerprint machine's export into a payroll sheet. None of it was coursework. All of it had a real user who would notice the next morning if it broke, which is the part that taught me the most.</p>
+      <p>I am now moving deliberately toward Python backend work — FastAPI, SQLAlchemy, tests — because that is where I want to spend the next few years. I am looking for an intern or fresher role in Ho Chi Minh City where I can read a real codebase and be corrected by people who have shipped more than I have.</p>
     </div>
     <div class="btn-row">
       <a class="btn" href="files/cv.pdf">Download CV</a>
@@ -51,17 +49,9 @@
       </div>
       <div class="entries">
         <article class="entry">
-          <p class="when">2019 · University name</p>
-          <h3>PhD, Your Subject</h3>
-          <p>Thesis title, or one line on what the doctorate was about.</p>
-        </article>
-        <article class="entry">
-          <p class="when">2015 · University name</p>
-          <h3>MSc, Your Subject</h3>
-        </article>
-        <article class="entry">
-          <p class="when">2013 · University name</p>
-          <h3>BSc, Your Subject</h3>
+          <p class="when">Final year · University of Transport and Communications, HCMC</p>
+          <h3>BSc, Information Technology</h3>
+          <p>Coursework in databases, operating systems, networks and software engineering. Most of what I actually use came from building the projects on the next page.</p>
         </article>
       </div>
     </div>
@@ -76,33 +66,36 @@
       </div>
       <div class="entries">
         <article class="entry">
-          <p class="when">2022 – now · Institution</p>
-          <h3>Current role</h3>
-          <p>One line on what you do there and what you've built or shown.</p>
+          <p class="when">2025 – now · AccessoryHub, contract</p>
+          <h3>Sole developer — sales and stock system</h3>
+          <p>Built and now maintain the Express + SQLite system an accessories shop sells with: products, orders, barcode scanning, printable bills, dashboard. Shipped as a single Windows executable so the shop installs nothing.</p>
         </article>
         <article class="entry">
-          <p class="when">2019 – 2022 · Institution</p>
-          <h3>Previous role</h3>
+          <p class="when">2024 – now · Anh Thư shop</p>
+          <h3>Tooling and bots for a live-selling shop</h3>
+          <p>TikTok order automation on Node with a SQLite store, Zalo auto-reply adapters wired to n8n, invoice printing, and the Python payroll tool that replaced a hand-typed monthly sheet.</p>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- ============ TALKS & HONOURS ============ -->
-  <section class="section" aria-labelledby="hon-h">
+  <!-- ============ HOW I WORK ============ -->
+  <section class="section" aria-labelledby="how-h">
     <div class="wrap">
       <div class="section-head">
-        <h2 id="hon-h">Talks &amp; honours</h2>
+        <h2 id="how-h">How I work</h2>
         <hr class="short-rule">
       </div>
       <div class="entries">
         <article class="entry">
-          <p class="when">2025 · City</p>
-          <h3>Invited talk, conference name</h3>
+          <p class="when">01</p>
+          <h3>Read the real file before writing the parser</h3>
+          <p>Every bug I have lost a day to came from assuming the input was cleaner than it is. So the first job is always to look at the actual export, the actual order, the actual device.</p>
         </article>
         <article class="entry">
-          <p class="when">2024 · Awarding body</p>
-          <h3>Award or fellowship name</h3>
+          <p class="when">02</p>
+          <h3>Leave it runnable by someone who is not me</h3>
+          <p>An .exe, a compose file, a README with the exact command. A tool that needs me to explain it is not finished.</p>
         </article>
       </div>
     </div>
@@ -110,7 +103,10 @@
 </main>
 
 <footer class="foot">
-  <a href="index.html">© 2026 Alex Morgan</a>
+  <a href="index.html">© 2026 Tôn Hoàng Nhớ</a>
+  <a href="mailto:hoangnho.ton@gmail.com">Email</a>
+  <a href="https://github.com/nhoton2004">GitHub</a>
+  <a href="https://www.linkedin.com/in/nh%E1%BB%9B-t%C3%B4n-ho%C3%A0ng-242290416/">LinkedIn</a>
   <button type="button" class="toggle" data-theme-toggle aria-pressed="false"><svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 1.5a6.5 6.5 0 0 0 0 13z" fill="currentColor"/></svg><span data-theme-label>Dark</span></button>
   <a href="https://github.com/tuannguyen8390/sciencefolio" rel="noopener">Built with Sciencefolio</a>
 </footer>

@@ -3,14 +3,12 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- LABEL: "Work" is the neutral default. Researchers: rename to "Publications". Students: "Projects".
-     Change it in the nav link on all four pages, the <h1> below, and this <title>. -->
-<title>Work · Alex Morgan</title>
-<meta name="description" content="Papers, projects, posters and talks by Alex Morgan.">
+<title>Projects · Tôn Hoàng Nhớ</title>
+<meta name="description" content="Projects by Tôn Hoàng Nhớ — a sales system, a TikTok order service and a payroll pipeline.">
 <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;600;700;800&family=IBM+Plex+Mono:wght@400;600&family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;600;700;800&family=IBM+Plex+Mono:wght@400;600&display=swap">
 <link rel="stylesheet" href="css/tokens.css">
 <link rel="stylesheet" href="css/site.css">
 <script src="js/theme.js"></script>
@@ -19,83 +17,67 @@
 <body>
 
 <nav class="nav" aria-label="Main">
-  <!-- EDIT: your name; links back to the home page -->
-  <a class="nav-name" href="index.html">Alex Morgan</a>
+  <a class="nav-name" href="index.html">Tôn Hoàng Nhớ</a>
   <a href="about.html">About</a>
-  <a href="research.html">Research</a>
-  <a href="work.html" aria-current="page">Work</a>
+  <a href="research.html">Stack</a>
+  <a href="work.html" aria-current="page">Projects</a>
 </nav>
 
 <main>
   <header class="page-head">
-    <h1>Work</h1>
+    <h1>Projects</h1>
     <hr class="short-rule">
-    <!-- EDIT: one line on how to read this page. Students: say what these projects were for (course, lab, thesis, side project). -->
-    <p>Papers, projects, posters and talks — the things I've made and presented.</p>
+    <p>Three tools built for real shops — a sales system, an order service, a payroll pipeline — plus what I am working on now.</p>
   </header>
 
-  <section class="section flush-top" aria-label="Work list">
+  <section class="section flush-top" aria-label="Project list">
     <div class="wrap">
 
-      <!-- Filters: each button's data-filter matches an entry's data-type. Delete buttons you don't need (e.g. Papers, if you have none yet). -->
-      <div class="filters" role="group" aria-label="Filter by type">
+      <!-- Filters: each button's data-filter matches an entry's data-type -->
+      <div class="filters" role="group" aria-label="Filter by kind of work">
         <button type="button" class="filter" data-filter="all" aria-pressed="true">All</button>
-        <button type="button" class="filter" data-filter="paper" aria-pressed="false">Papers</button>
-        <button type="button" class="filter" data-filter="project" aria-pressed="false">Projects</button>
-        <button type="button" class="filter" data-filter="poster" aria-pressed="false">Posters</button>
-        <button type="button" class="filter" data-filter="talk" aria-pressed="false">Talks</button>
+        <button type="button" class="filter" data-filter="backend" aria-pressed="false">Backend</button>
+        <button type="button" class="filter" data-filter="automation" aria-pressed="false">Automation</button>
+        <button type="button" class="filter" data-filter="data" aria-pressed="false">Data</button>
       </div>
 
-      <!-- One .year-group per year; one .entry per item. Only the title is required: drop the authors line,
-           the description, the tags or any link you don't have. The first line ("Journal · Name") is the type and venue.
-           Papers/preprints use data-type="paper"; theses and course/lab/personal work use "project". -->
+      <section class="year-group" aria-labelledby="y2026">
+        <h2 class="year" id="y2026">Now</h2>
+        <article class="entry" data-type="backend">
+          <p class="when">In progress · Python + FastAPI</p>
+          <h3>Moving the backend work onto FastAPI</h3>
+          <p>Rewriting the API surface of one of the projects below in FastAPI — pydantic models, SQLAlchemy over SQLite, tests written before the handlers. This entry is here so the page does not pretend otherwise.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">SQLAlchemy</span><span class="tag">pytest</span></div>
+        </article>
+      </section>
+
       <section class="year-group" aria-labelledby="y2025">
         <h2 class="year" id="y2025">2025</h2>
-        <article class="entry" data-type="paper">
-          <p class="when">Journal · Journal Name, 12(3): 456–478</p>
-          <h3><a href="https://doi.org/">Title of your most recent paper goes here</a></h3>
-          <p class="authors"><strong>A. Morgan</strong>, B. Collaborator, C. Collaborator</p>
-          <div class="links"><a href="https://doi.org/">DOI</a><a href="files/placeholder.pdf">PDF</a><a href="https://github.com/">Code</a></div>
+
+        <article class="entry" data-type="backend">
+          <p class="when">Web app · Node + Express + SQLite · private repo</p>
+          <h3>AccessoryHub — sales and stock system</h3>
+          <p>A shop selling phone accessories ran on paper and a spreadsheet. This replaced it: product CRUD with generated Code128 barcodes, a point-of-sale screen that scans and checks out, stock that decrements on purchase, printable bills, revenue dashboard and CSV export.</p>
+          <div class="tags"><span class="tag">Express</span><span class="tag">sql.js</span><span class="tag">bcrypt</span><span class="tag">Jest</span></div>
         </article>
-        <article class="entry" data-type="project">
-          <p class="when">Project · Course, lab or personal</p>
-          <h3><a href="https://github.com/">Name of a project you built or ran</a></h3>
-          <p>One or two sentences: what problem it tackled, what you did, what came out of it.</p>
-          <div class="tags"><span class="tag">Tool</span><span class="tag">Method</span><span class="tag">Language</span></div>
-          <div class="links"><a href="files/placeholder.pdf">Report</a><a href="https://github.com/">Code</a><a href="https://example.com/">Demo</a></div>
+
+        <article class="entry" data-type="automation">
+          <p class="when">Service · Node + better-sqlite3</p>
+          <h3><a href="https://github.com/nhoton2004/Tikoder">Tikoder — TikTok order automation</a></h3>
+          <p>Order capture and quoting for a live-selling shop, with a crash-safe session, history editing and Zalo auto-reply adapters plus n8n hooks for notifications. Around twenty <code>node --test</code> suites cover the parts that break in production: crash recovery, quote edits, reconciliation.</p>
+          <div class="tags"><span class="tag">Node</span><span class="tag">SQLite</span><span class="tag">Zalo</span><span class="tag">n8n</span><span class="tag">Docker</span></div>
+          <div class="links"><a href="https://github.com/nhoton2004/Tikoder">Code</a></div>
         </article>
       </section>
 
       <section class="year-group" aria-labelledby="y2024">
         <h2 class="year" id="y2024">2024</h2>
-        <article class="entry" data-type="project">
-          <p class="when">Thesis · University name</p>
-          <h3><a href="files/placeholder.pdf">Title of your thesis or capstone</a></h3>
-          <p class="authors">Supervised by Prof. Name</p>
-          <p>One-sentence summary of the question and the main result.</p>
-          <div class="links"><a href="files/placeholder.pdf">PDF</a></div>
-        </article>
-        <article class="entry" data-type="poster">
-          <p class="when">Poster · Conference or symposium name, City</p>
-          <h3>Title of a poster you presented</h3>
-          <p class="authors"><strong>A. Morgan</strong>, B. Collaborator</p>
-          <div class="links"><a href="files/placeholder.pdf">PDF</a></div>
-        </article>
-      </section>
 
-      <section class="year-group" aria-labelledby="y2023">
-        <h2 class="year" id="y2023">2023</h2>
-        <article class="entry" data-type="paper">
-          <p class="when">Preprint · arXiv / bioRxiv / SSRN</p>
-          <h3><a href="https://arxiv.org/">Title of a preprint you want people to read</a></h3>
-          <p class="authors"><strong>A. Morgan</strong>, C. Collaborator</p>
-          <div class="links"><a href="https://arxiv.org/">Preprint</a></div>
-        </article>
-        <article class="entry" data-type="talk">
-          <p class="when">Talk · Event name, City</p>
-          <h3>Title of a talk or lightning talk</h3>
-          <p class="authors"><strong>A. Morgan</strong></p>
-          <div class="links"><a href="files/placeholder.pdf">Slides</a></div>
+        <article class="entry" data-type="data">
+          <p class="when">Tool · Python + Excel · private repo</p>
+          <h3>ChamCong — payroll from the fingerprint machine</h3>
+          <p>The timeclock exports a nasty .xls; payroll was typed by hand every month. This reads the export, resolves each person's hours against a roster, writes the monthly sheet with openpyxl and produces a separate reconciliation report of the days a human should check. Delivered as a Windows .exe via PyInstaller.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">xlrd</span><span class="tag">openpyxl</span><span class="tag">PyInstaller</span></div>
         </article>
       </section>
 
@@ -104,7 +86,10 @@
 </main>
 
 <footer class="foot">
-  <a href="index.html">© 2026 Alex Morgan</a>
+  <a href="index.html">© 2026 Tôn Hoàng Nhớ</a>
+  <a href="mailto:hoangnho.ton@gmail.com">Email</a>
+  <a href="https://github.com/nhoton2004">GitHub</a>
+  <a href="https://www.linkedin.com/in/nh%E1%BB%9B-t%C3%B4n-ho%C3%A0ng-242290416/">LinkedIn</a>
   <button type="button" class="toggle" data-theme-toggle aria-pressed="false"><svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 1.5a6.5 6.5 0 0 0 0 13z" fill="currentColor"/></svg><span data-theme-label>Dark</span></button>
   <a href="https://github.com/tuannguyen8390/sciencefolio" rel="noopener">Built with Sciencefolio</a>
 </footer>

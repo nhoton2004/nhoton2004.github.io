@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>CV · Tôn Hoàng Nhớ</title>
+<!--
+  CV source. Edit the text below, then rebuild the PDF:
+    sh files/build-cv.sh
+  The layout is deliberately plain (no flexbox) so LibreOffice prints it faithfully.
+-->
+<style>
+  body {
+    font-family: "Liberation Sans", Arial, Helvetica, sans-serif;
+    font-size: 9.6pt;
+    line-height: 1.38;
+    color: #1a1a1a;
+    margin: 0;
+  }
+  h1, h2, b { font-family: "Liberation Sans", Arial, Helvetica, sans-serif; }
+  h1 { font-size: 22pt; margin: 0 0 2pt; }
+  .role { font-size: 10.5pt; margin: 0 0 5pt; color: #333; }
+  .contact { font-size: 9pt; margin: 0 0 3pt; color: #222; }
+  .contact a { color: #1a3fb0; text-decoration: none; }
+  hr.rule { border: 0; border-top: 1.4pt solid #1a1a1a; margin: 7pt 0 0; }
+  h2 {
+    font-size: 9pt;
+    text-transform: uppercase;
+    margin: 11pt 0 4pt;
+    padding-bottom: 2pt;
+    border-bottom: 0.6pt solid #999;
+  }
+  p { margin: 0 0 4pt; }
+  .item { margin: 0 0 6pt; }
+  .item-head { margin: 0 0 1pt; }
+  .item-head b { font-size: 10pt; }
+  .meta { font-size: 8.8pt; color: #444; }
+  ul { margin: 2pt 0 0; padding-left: 13pt; }
+  li { margin: 0 0 1.5pt; }
+  table.kv { border-collapse: collapse; width: 100%; margin: 0 0 2pt; }
+  table.kv td { padding: 0 0 2.5pt; vertical-align: top; font-size: 9.6pt; }
+  table.kv td.k { width: 88pt; font-weight: bold; }
+</style>
+</head>
+<body>
+
+<h1>Tôn Hoàng Nhớ</h1>
+<p class="role">Backend developer — Node.js / Express today, Python / FastAPI next</p>
+<p class="contact">Ho Chi Minh City, Vietnam &nbsp;·&nbsp; <a href="mailto:hoangnho.ton@gmail.com">hoangnho.ton@gmail.com</a> &nbsp;·&nbsp; 0326 455 925</p>
+<p class="contact"><a href="https://github.com/nhoton2004">github.com/nhoton2004</a> &nbsp;·&nbsp; <a href="https://www.linkedin.com/in/nh%E1%BB%9B-t%C3%B4n-ho%C3%A0ng-242290416/">linkedin.com/in/nhớ-tôn-hoàng-242290416</a></p>
+<hr class="rule">
+
+<h2>Objective</h2>
+<p>Information Technology student looking for an internship or fresher backend role. I build small tools that take repeated manual work off a real user's hands — a point of sale, a payroll pipeline, an order flow — and I am moving that work onto Python and FastAPI.</p>
+
+<h2>Skills</h2>
+<table class="kv">
+  <tr><td class="k">Languages</td><td>Python, JavaScript, SQL</td></tr>
+  <tr><td class="k">Backend</td><td>Node.js, Express, REST APIs, FastAPI (in progress), SQLAlchemy</td></tr>
+  <tr><td class="k">Databases</td><td>SQLite — schema design, parameterized queries, backup and hand-over</td></tr>
+  <tr><td class="k">Testing &amp; tools</td><td>node:test, pytest, Git, Docker, Linux, n8n, PyInstaller</td></tr>
+</table>
+
+<h2>Projects</h2>
+
+<div class="item">
+  <p class="item-head"><b>AccessoryHub — sales and stock system for a phone-accessories shop</b></p>
+  <p class="meta">2025 · Node.js, Express, SQLite, EJS — contract, still maintained</p>
+  <ul>
+    <li>Point of sale with product management, barcode lookup, stock decremented at checkout and printable bills.</li>
+    <li>Revenue dashboard plus PDF invoices; shipped as a single Windows executable so the shop installs nothing.</li>
+    <li>One SQLite file as the whole database, every query parameterized.</li>
+  </ul>
+</div>
+
+<div class="item">
+  <p class="item-head"><b>Tikoder — TikTok order automation for a live-selling shop</b></p>
+  <p class="meta">2025 · Node.js, better-sqlite3, Zalo API, n8n</p>
+  <ul>
+    <li>Captures orders from TikTok live sales and drives Zalo replies and invoice printing through adapters.</li>
+    <li>About twenty <i>node --test</i> suites covering crash recovery, quote editing and shop reconciliation.</li>
+    <li>Designed to keep running unattended, with error handling instead of silent loss.</li>
+  </ul>
+</div>
+
+<div class="item">
+  <p class="item-head"><b>ChamCong — payroll out of the fingerprint timeclock</b></p>
+  <p class="meta">2024 · Python, xlrd, openpyxl, PyInstaller</p>
+  <ul>
+    <li>Parses the timeclock .xls export, resolves each person's hours and writes the monthly payroll sheet.</li>
+    <li>Emits a separate reconciliation report naming the days a human has to check, instead of guessing.</li>
+    <li>Delivered as a Windows executable to a user who never opens a terminal.</li>
+  </ul>
+</div>
+
+<h2>Education</h2>
+<p><b>BSc, Information Technology</b> — University of Transport and Communications, Ho Chi Minh City</p>
+<p class="meta">Final year · expected graduation 2026 · coursework in databases, operating systems, networks and software engineering</p>
+
+</body>
+</html>

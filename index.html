@@ -4,13 +4,20 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Alex Morgan · Your field</title>
-<meta name="description" content="Academic homepage of Alex Morgan — your field, your institution.">
+<title>Tôn Hoàng Nhớ · Backend developer</title>
+<meta name="description" content="Backend-leaning developer in Ho Chi Minh City — Express and SQLite today, Python and FastAPI next.">
+<meta property="og:type" content="profile">
+<meta property="og:site_name" content="Tôn Hoàng Nhớ">
+<meta property="og:title" content="Tôn Hoàng Nhớ · Backend developer">
+<meta property="og:description" content="Backend-leaning developer in Ho Chi Minh City — Express and SQLite today, Python and FastAPI next.">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Tôn Hoàng Nhớ · Backend developer">
+<meta name="twitter:description" content="Backend-leaning developer in Ho Chi Minh City — Express and SQLite today, Python and FastAPI next.">
 <link rel="icon" href="images/favicon.svg" type="image/svg+xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<!-- Trim to the families your pack uses: grotesk = Archivo + IBM Plex Mono, serif = Fraunces + Archivo -->
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;600;700;800&family=IBM+Plex+Mono:wght@400;600&family=Fraunces:ital,opsz,wght@0,9..144,300..700;1,9..144,300..700&display=swap">
+<!-- Grotesk pack only: Archivo + IBM Plex Mono. Add Fraunces back if you switch to the serif pack. -->
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;600;700;800&family=IBM+Plex+Mono:wght@400;600&display=swap">
 <link rel="stylesheet" href="css/tokens.css">
 <link rel="stylesheet" href="css/site.css">
 <script src="js/theme.js"></script>
@@ -19,57 +26,54 @@
 
 <nav class="nav" aria-label="Main">
   <a href="about.html">About</a>
-  <a href="research.html">Research</a>
-  <a href="work.html">Work</a>
+  <a href="research.html">Stack</a>
+  <a href="work.html">Projects</a>
 </nav>
 
 <main>
-  <!-- ============ HERO — edit these six things ============ -->
+  <!-- ============ HERO ============ -->
   <header class="hero">
-    <!-- 1. Photo: replace the file, or delete this <figure> for a type-only hero -->
-    <figure class="portrait"><img src="images/portrait-placeholder.svg" alt="Portrait of Alex Morgan" width="300" height="300"></figure>
-    <!-- 2. Name -->
-    <h1>Dr. Alex Morgan</h1>
-    <!-- 3. Field · place -->
-    <p class="kicker">Your field · Your city</p>
+    <!-- Chưa có ảnh: hero chỉ chữ. Có ảnh vuông rồi thì bỏ comment figure dưới đây:
+    <figure class="portrait"><img src="images/portrait.jpg" alt="Portrait of Tôn Hoàng Nhớ" width="300" height="300"></figure>
+    -->
+    <h1>Tôn Hoàng Nhớ</h1>
+    <p class="kicker">Backend-leaning developer · Ho Chi Minh City</p>
     <hr class="short-rule">
-    <!-- 4. One sentence. Wrap the part you want emphasised in <strong>. -->
-    <p class="statement">One sentence on the question you work on — <strong>and why it matters.</strong></p>
-    <!-- 5. Profile links -->
+    <p class="statement">I build small tools that remove manual work — a POS, a payroll pipeline, a TikTok order flow — and I'm moving that work onto <strong>Python and FastAPI.</strong></p>
     <ul class="profile-links">
-      <li><a href="https://scholar.google.com/">Scholar</a></li>
-      <li><a href="https://orcid.org/">ORCID</a></li>
-      <li><a href="https://github.com/">GitHub</a></li>
-      <li><a href="mailto:you@university.edu">Email</a></li>
+      <li><a href="https://github.com/nhoton2004">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/nh%E1%BB%9B-t%C3%B4n-ho%C3%A0ng-242290416/">LinkedIn</a></li>
+      <li><a href="mailto:hoangnho.ton@gmail.com">Email</a></li>
       <li><a href="files/cv.pdf">CV</a></li>
+      <li><a href="https://ut.edu.vn">University</a></li>
     </ul>
   </header>
 
-  <!-- ============ WHAT I WORK ON ============ -->
+  <!-- ============ WHAT I BUILD ============ -->
   <section class="section" aria-labelledby="work-h">
     <div class="wrap">
       <div class="section-head">
-        <h2 id="work-h">What I work on</h2>
+        <h2 id="work-h">What I build</h2>
         <hr class="short-rule">
       </div>
       <div class="cols3">
         <article class="col">
-          <h3>Research area one</h3>
-          <p>One or two sentences on this area: the question you ask and why it matters.</p>
-          <div class="tags"><span class="tag">Method</span><span class="tag">Topic</span></div>
+          <h3>Backend &amp; APIs</h3>
+          <p>Express APIs over SQLite for a shop that sells phone accessories: products, orders, stock that decrements itself at checkout, printable bills.</p>
+          <div class="tags"><span class="tag">Node</span><span class="tag">Express</span><span class="tag">SQLite</span></div>
         </article>
         <article class="col">
-          <h3>Research area two</h3>
-          <p>One or two sentences on this area: the question you ask and why it matters.</p>
-          <div class="tags"><span class="tag">Method</span><span class="tag">Topic</span></div>
+          <h3>Data pipelines</h3>
+          <p>Python that reads the fingerprint machine's .xls export, works out the hours, and writes a payroll sheet plus a list of days a human should check.</p>
+          <div class="tags"><span class="tag">Python</span><span class="tag">xlrd</span><span class="tag">openpyxl</span></div>
         </article>
         <article class="col">
-          <h3>Research area three</h3>
-          <p>One or two sentences on this area: the question you ask and why it matters.</p>
-          <div class="tags"><span class="tag">Method</span><span class="tag">Topic</span></div>
+          <h3>Automation</h3>
+          <p>Node services and adapters that take the repetitive part off a shop's hands: TikTok order capture, Zalo replies, invoice printing.</p>
+          <div class="tags"><span class="tag">Node</span><span class="tag">better-sqlite3</span><span class="tag">n8n</span></div>
         </article>
       </div>
-      <p class="more"><a href="research.html">All research →</a></p>
+      <p class="more"><a href="research.html">View stack →</a></p>
     </div>
   </section>
 
@@ -82,22 +86,22 @@
       </div>
       <div class="entries">
         <article class="entry">
-          <p class="when">2025 · Paper</p>
-          <h3><a href="work.html">Title of your most recent paper or best project</a></h3>
-          <p>Journal Name, with B. Collaborator</p>
+          <p class="when">2025 · Web app · Node + Express · private repo</p>
+          <h3>AccessoryHub — sales and stock system for an accessories shop</h3>
+          <p>Point of sale, product CRUD, barcode lookup, PDF bills and a dashboard that tracks revenue. Packaged as one Windows .exe so the shop can run it without installing anything.</p>
         </article>
         <article class="entry">
-          <p class="when">2024 · Project</p>
-          <h3><a href="work.html">Title of a second piece of work you are proud of</a></h3>
-          <p>Course, lab or personal project</p>
+          <p class="when">2025 · Service · Node + SQLite</p>
+          <h3><a href="https://github.com/nhoton2004/Tikoder">Tikoder — TikTok order automation for a live-selling shop</a></h3>
+          <p>Order pipeline on better-sqlite3 with Zalo auto-reply adapters and n8n hooks; about twenty node --test suites covering crash recovery, quote editing and shop reconciliation.</p>
         </article>
         <article class="entry">
-          <p class="when">2023 · Poster</p>
-          <h3><a href="work.html">Title of a poster, talk or thesis</a></h3>
-          <p>Event or institution name</p>
+          <p class="when">2024 · Tool · Python</p>
+          <h3>ChamCong — payroll out of the fingerprint machine</h3>
+          <p>Reads the timeclock .xls, works out hours per person, writes the monthly payroll sheet and a reconciliation report for the days that do not add up. Shipped with PyInstaller to a user who never opens a terminal.</p>
         </article>
       </div>
-      <p class="more"><a href="work.html">All work →</a></p>
+      <p class="more"><a href="work.html">All projects →</a></p>
     </div>
   </section>
 
@@ -108,9 +112,9 @@
         <h2 id="contact-h">Get in touch</h2>
         <hr class="short-rule">
       </div>
-      <p class="prose">Open to collaborations, student enquiries and invitations to speak. The best way to reach me is email.</p>
+      <p class="prose">Looking for an intern or fresher backend role in Ho Chi Minh City — Python preferred, Node welcome. The fastest way to reach me is email.</p>
       <div class="btn-row">
-        <a class="btn" href="mailto:you@university.edu">you@university.edu</a>
+        <a class="btn" href="mailto:hoangnho.ton@gmail.com">hoangnho.ton@gmail.com</a>
         <a class="btn btn-line" href="files/cv.pdf">Download CV</a>
       </div>
     </div>
@@ -118,7 +122,10 @@
 </main>
 
 <footer class="foot">
-  <a href="index.html">© 2026 Alex Morgan</a>
+  <a href="index.html">© 2026 Tôn Hoàng Nhớ</a>
+  <a href="mailto:hoangnho.ton@gmail.com">Email</a>
+  <a href="https://github.com/nhoton2004">GitHub</a>
+  <a href="https://www.linkedin.com/in/nh%E1%BB%9B-t%C3%B4n-ho%C3%A0ng-242290416/">LinkedIn</a>
   <button type="button" class="toggle" data-theme-toggle aria-pressed="false"><svg viewBox="0 0 16 16" width="13" height="13" aria-hidden="true"><circle cx="8" cy="8" r="6.5" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 1.5a6.5 6.5 0 0 0 0 13z" fill="currentColor"/></svg><span data-theme-label>Dark</span></button>
   <a href="https://github.com/tuannguyen8390/sciencefolio" rel="noopener">Built with Sciencefolio</a>
 </footer>
