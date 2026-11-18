@@ -11,7 +11,7 @@ Bốn trang HTML thuần cộng `404.html`, không build, không cài gì. Mở 
 
 | Việc | Ở đâu | Ghi chú |
 |---|---|---|
-| **Tên hiển thị** | cả 4 file `.html` + `<title>` | đang để `Tôn Hoàng Nhớ`; nếu muốn tên đầy đủ tiếng Việt thì thay hết |
+| **Ảnh chân dung** | `images/portrait.jpg` | đang không có — hero chỉ chữ. Có ảnh vuông ≥400px thì đặt vào rồi bỏ comment `<figure class="portrait">` |
 | **Năm bắt đầu đại học** | `about.html` → Education | đang ghi "Final year", chưa ghi mốc năm |
 | **Link repo ChamCong** | `work.html` → entry 2024 | hiện không có link vì repo chưa public |
 
